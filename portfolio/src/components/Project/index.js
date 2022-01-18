@@ -42,11 +42,7 @@ function Portfolio() {
       url: 'https://leslyr562.github.io/Worldwide-Weather-Forecast/'
     },
 
-  ]
-
-function handleClick() {
-
-}
+  ];
 
   return (
     <section id="pages">
