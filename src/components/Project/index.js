@@ -51,7 +51,7 @@ function Portfolio() {
       <div className="flex-row">
       
         {projects.map((image, i) => (
-           <a className='imagelink' href={image.url}>
+           <a className='imagelink' href={image.url} target="_blank" rel="noreferrer">
           <img
             src={require(`../../assets/projects/${i}.jpg`)}
             alt={image.name}
