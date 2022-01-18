@@ -32,3 +32,7 @@ Github Repository: https://github.com/leslyr562/personal-portfolio.git
 ##Authors
 
 - Lesly Gonzalez
+
+![title](src/assets/images/about.png)
+![title](src/assets/images/projects.png)
+![title](src/assets/images/contact.png)
