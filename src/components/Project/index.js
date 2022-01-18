@@ -51,13 +51,14 @@ function Portfolio() {
       <div className="flex-row">
       
         {projects.map((image, i) => (
+           <a className='imagelink' href={image.url}>
           <img
             src={require(`../../assets/projects/${i}.jpg`)}
             alt={image.name}
             className="portfolio"
-            href={image.url}
             key={image.name}
           />
+          </a>
         ))}
       </div>
 
