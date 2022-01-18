@@ -1,18 +1,16 @@
 import React from 'react';
-import Navigator from './components/Navigator'
-import Portfolio from './components/Project';
-import ContactForm from './components/Contact'
+import Header from './components/Header/index'
+import Footer from './components/Footer'
+
 
 
 function App() {
 
+
   return (
     <div>
-       <Navigator></Navigator>
-      <main>
-      <ContactForm></ContactForm>
-        <Portfolio></Portfolio>
-      </main>
+    <Header> </Header>
+    <Footer></Footer>
     </div>
   );
 }
