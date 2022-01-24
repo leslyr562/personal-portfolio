@@ -23,7 +23,7 @@ function Header() {
 
 
     return (
-        <section>
+        <section id="main">
              <header className="header">
             <h2>
                 <a id='myName' href="/">
