@@ -1,6 +1,6 @@
 import React from "react";
 
-function Resume() {
+function skills() {
 
     return(
         <div id="resume">
@@ -37,4 +37,4 @@ function Resume() {
     );
 }
 
-export default Resume;
+export default skills;
