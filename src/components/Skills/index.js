@@ -3,8 +3,8 @@ import React from "react";
 function skills() {
 
     return(
-        <div id="resume">
-            <h2 className="title">Resume</h2>
+        <div id="skills">
+            <h1 className='sectionName'>Skills</h1>
             <div>
                 <div>
                     <div><a href={require(`../../assets/documents/Resume.pdf`)} className="resume-link">Resume Link</a></div>

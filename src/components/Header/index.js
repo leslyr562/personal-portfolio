@@ -13,25 +13,25 @@ function Header() {
                         <span role="img" aria-label="hearts">  </span> Lesly Gonzalez 💕
                     </a>
                 </h2>
-                <nav>
+                <nav> 
                     <ul className="header">
                         <li>
-                            <a href="#About">
+                            <a className='navText' href="#about">
                                 About me
                             </a>
                         </li>
                         <li>
-                            <a href="#Skills">
+                            <a className='navText' href="#skills">
                                 Skills
                             </a>
                         </li>
                         <li>
-                            <a href="#Portfolio">
+                            <a className='navText' href="#portfolio">
                                 Portfolio
                             </a>
                         </li>
                         <li>
-                            <a href="#Contact">
+                            <a className='navText' href="#contact">
                                 Contact
                             </a>
                         </li>

@@ -5,7 +5,7 @@ function About() {
 
   return (
     <section id="about">
-      <h1>About Me</h1>
+      <h1 className='sectionName'>About Me</h1>
       <div className="flex-row">
         <img
           src={photo}
