@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import mailbox from '../../assets/images/mailbox.png'
 
 
 const ContactForm = () => {
@@ -38,26 +39,45 @@ const ContactForm = () => {
     return (
         <section id='contact'>
             <h1 className='sectionName'>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
+            <div>
+                <img className='mailbox' src={mailbox} alt='mailbox' />
+            </div>
+            <div className='container'>
+                <form id="contact-form" onSubmit={handleSubmit}>
+                    <div className='row'>
+                        <div className='col-25'>
+                            <label htmlFor="name">Name:</label>
+                        </div>
+                        <div className='col-75'>
+                            <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder='Your Name' />
+                        </div>
                     </div>
-                )}
-                <button type="submit">Submit</button>
-            </form>
+                    <div className='row'>
+                        <div className='col-25'>
+                            <label htmlFor="email">Email:</label>
+                        </div>
+                        <div className='col-75'>
+                            <input type="email" defaultValue={email} name="email" onBlur={handleChange} placeholder='Your Email' />
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-25'>
+                            <label htmlFor="message">Message:</label>
+                        </div>
+                        <div className='col-75'>
+                            <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" placeholder='Write your message.' />
+                        </div>
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <div className='row'>
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </section>
     );
 }

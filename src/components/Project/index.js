@@ -45,7 +45,7 @@ function Portfolio() {
   ];
 
   return (
-    <section id="pages">
+    <section id="portfolio">
       <h1 className='sectionName'>My Projects:</h1>
 
       <div className="flex-row">

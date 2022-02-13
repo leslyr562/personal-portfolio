@@ -3,7 +3,7 @@
   --light-pink: #ffa8a9ff;
   --tickle-me-pink: #f786aaff;
   --magenta-haze: rgb(156, 151, 151);
-  --lavender: rgb(255, 0, 149);
+  --lavender: rgba(209, 13, 134, 0.801);
   }
 
 
@@ -37,7 +37,7 @@ padding: 5px
   flex-wrap: wrap;
 }
 
-
+/* header & nav */
 .header {
   background-color: var(--magenta-haze);
   display: flex;
@@ -58,12 +58,6 @@ header ul {
 #myName {
   color: var(--light-pink);
   text-decoration: none;
-}
-
-.hero {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
 }
 
 header ul a {
@@ -107,22 +101,27 @@ nav  li {
   cursor: pointer;
 }
 
+.hero {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+/* end of header */
 
 
-
-#pages{
+/* single pages */
+#portfolio{
   background-color: var(--melon);
   padding-top: 20px;
   padding-bottom: 40px;
 }
-
 
 h1.sectionName{
   color:var(--tickle-me-pink);
   text-align: center;
   border-bottom: 2px solid;
   border-color: var(--magenta-haze);
-  margin: 0 auto 35px auto;
+  margin: 0 auto 5px auto;
   width: 40%;
 }
 p {
@@ -139,30 +138,48 @@ p {
   border-radius: 50%;
 }
 
-
-img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
-}
-
 #contact {
   background-color: var(--melon);
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
+#contact-form{
+  float: left;
+  margin-top: 40px;
+}
+
+.container{
+  margin-bottom: 30px;
+}
+
+.mailbox{
+  float: left;
+  height: 50%;
+  padding-bottom: 90px;
+}
+
 button{
   color:white;
   background-color: var(--lavender);
   border-radius: 5px;
+  border: none;
+  margin: 2px;
+  float: right;
+  margin-right: 80px;
+  margin-top: 10px;
 }
+
+button:hover{
+  background-color: var(--tickle-me-pink);
+}
+
 textarea {
-	width: 600px;
-	height: 120px;
+	width: 300px;
+	height: 200px;
 	border: 2px solid var(--tickle-me-pink);
 	padding: 5px;
+  resize: none;
+  border-radius: 3px;
 }
 input {
   font-size: 1rem;
@@ -185,10 +202,29 @@ form {
   padding-bottom: 30px;
  
 }
-label{
-  color:var(--magenta-haze)
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label{
+  color:var(--magenta-haze);
+  margin-right: 10px;
+}
 
 .language{
   color: var(--lavender);
@@ -215,16 +251,15 @@ div.w3-container.w3-pink.strip {
   padding-bottom: 22px;
 }
 
-
 ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3px;
 }
+/* end of single pages */
 
-
-
+/* footer */
 footer{
   background-color: var(--magenta-haze);
   list-style: none;
