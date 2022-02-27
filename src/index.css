@@ -25,11 +25,7 @@ code {
     monospace;
 }
 
-img{
-height: 150px;
-width: 100;
-padding: 5px
-}
+
 
 .flex-row{
   display: block;
@@ -129,11 +125,14 @@ p {
   font-size: 20px;
 }
 
-img.portfolio{
-  padding-right: 0ch;
-}
-.description {
+img{
+  height: 200px;
+  padding-right: 0px;
+  }
+
+p.description {
   float: right;
+  text-align: center;
 }
 
 #about {
