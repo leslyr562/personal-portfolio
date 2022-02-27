@@ -129,6 +129,13 @@ p {
   font-size: 20px;
 }
 
+img.portfolio{
+  padding-right: 0ch;
+}
+.description {
+  float: right;
+}
+
 #about {
   background-color: var(--melon);
   padding-top: 350px;
