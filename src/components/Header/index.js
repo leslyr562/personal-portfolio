@@ -15,22 +15,22 @@ function Header() {
                 </h2>
                 <nav> 
                     <ul className="header">
-                        <li>
+                        <li className='li'>
                             <a className='navText' href="#about">
                                 About me
                             </a>
                         </li>
-                        <li>
+                        <li className='li'>
                             <a className='navText' href="#skills">
                                 Skills
                             </a>
                         </li>
-                        <li>
+                        <li className='li'>
                             <a className='navText' href="#portfolio">
                                 Portfolio
                             </a>
                         </li>
-                        <li>
+                        <li className='li'>
                             <a className='navText' href="#contact">
                                 Contact
                             </a>
