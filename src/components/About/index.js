@@ -20,7 +20,8 @@ function About() {
           After learning how to solder and fix motherboards, I realized that I wanted to learn more about computers and be able to
           understand more about their language and not so much about fixing them. That is when I decided to start my web developer career.
           I have not only worked with computers and electronics but since a teenager I have always been eager to learn new skills. I have also
-          worked in the massage therapy industry and have developed very good customer service within the years.
+          worked in the massage therapy industry and have developed very good customer service within the years. Throughout the years solving problems has 
+          become a skill that can be implemented in any career choice I take. 
         </p>
       </div>
     </section>

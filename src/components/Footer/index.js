@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
+import ScrollTop from '../ScrollTop'
 
 function Footer () {
     return(
      <footer> 
+       <ScrollTop />
           <a className="flist" href="https://github.com/leslyr562" target="blank">
             <li>
               <FaGithub/>
@@ -21,6 +23,7 @@ function Footer () {
               <FaStackOverflow/>
             </li>
           </a>
+          
        </footer> 
     )
 }

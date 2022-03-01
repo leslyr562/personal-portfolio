@@ -29,12 +29,12 @@ const ContactForm = () => {
                 setFormState({ ...formState, [e.target.name]: e.target.value });
             }
         }
-    }
+    };
 
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
-    }
+    };
 
     return (
         <section id='contact'>
@@ -80,6 +80,6 @@ const ContactForm = () => {
             </div>
         </section>
     );
-}
+};
 
 export default ContactForm;

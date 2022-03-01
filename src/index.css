@@ -129,8 +129,15 @@ img{
   height: 200px;
   padding-right: 0px;
   }
-.des{
-  float: right;
+  img.portfolio{
+    flex:left;
+  }
+
+div.imgs{
+  flex: left;
+}
+div.des{
+  flex: right;
 }
 
 #about {
@@ -268,7 +275,7 @@ footer{
   background-color: var(--magenta-haze);
   list-style: none;
   font-size: 75px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -282,6 +289,7 @@ li.flist {
   flex-wrap: wrap;
   padding-top: 6px;
   padding-right: 29px;
+  margin:auto;
 }
 .svg_icons{
   transform: scale(1.8);
@@ -302,4 +310,14 @@ color: var(--tickle-me-pink);
 svg{
   display: flex;
   flex-wrap: wrap;
+}
+button.top{
+  font-size: 10px;
+ position: relative;
+ margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
