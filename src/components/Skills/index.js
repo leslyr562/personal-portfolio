@@ -20,7 +20,7 @@ function skills() {
             <div>
                 <div><a href={require(`../../assets/documents/Resume.pdf`)} className="resume-link">Resume Link</a></div>
 
-                <div class="w3-container w3-pink strip">
+                <div class="w3-container strip">
                     <ul className='strip'> 
                         <li className='flist svg_icons'>
                             <FaHtml5 />

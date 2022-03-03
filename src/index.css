@@ -104,8 +104,52 @@ nav  li {
 }
 /* end of header */
 
+/* about */
 
-/* single pages */
+#about {
+  background-color: var(--melon);
+  padding-top: 350px;
+  padding-bottom: 40px;
+}
+.avatar-img {
+  border-radius: 50%;
+}
+
+
+
+/* skills */
+.resume-link{
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--magenta-haze);
+  text-align: right;
+}
+
+a.resume-link{
+  text-align: right;
+}
+
+.resume-link:hover{
+  color:var(--tickle-me-pink);
+}
+
+div.w3-container.strip {
+  padding-top: 20px;
+  padding-bottom: 22px;
+  background-color: var(--tickle-me-pink);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+
+
+
+/* portfolio */
 #portfolio{
   background-color: var(--melon);
   padding-top: 20px;
@@ -117,38 +161,82 @@ h1.sectionName{
   text-align: center;
   border-bottom: 2px solid;
   border-color: var(--magenta-haze);
-  margin: 0 auto 5px auto;
+  margin: 0 auto 50px auto;
   width: 40%;
 }
 p {
   color: var(--magenta-haze);
   font-size: 20px;
 }
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column2 {
+  padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+.column2 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: var(--melon);
+  padding: 10px;
+}
 
 img{
-  height: 200px;
+  height: 170px;
   padding-right: 0px;
   }
-  img.portfolio{
-    flex:left;
-  }
 
-div.imgs{
-  flex: left;
-}
-div.des{
-  flex: right;
+li.list{
+  float:left;
+  width: 50%;
+  color: var(--magenta-haze)
 }
 
-#about {
-  background-color: var(--melon);
-  padding-top: 350px;
-  padding-bottom: 40px;
-}
-.avatar-img {
-  border-radius: 50%;
+h4 {
+  color:var(--lavender)
 }
 
+h2{
+  color:var(--tickle-me-pink)
+}
+p.description{
+  color: var(--magenta-haze)
+}
+
+
+
+/* contact form */
 #contact {
   background-color: var(--melon);
   padding-top: 20px;
@@ -242,33 +330,8 @@ label{
 
 }
 
-.resume-link{
-  text-decoration: none;
-  font-size: 30px;
-  color: var(--magenta-haze);
-  text-align: right;
-}
 
-a.resume-link{
-  text-align: right;
-}
 
-.resume-link:hover{
-  color:var(--tickle-me-pink);
-}
-
-div.w3-container.w3-pink.strip {
-  padding-top: 20px;
-  padding-bottom: 22px;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 3px;
-}
-/* end of single pages */
 
 /* footer */
 footer{
@@ -320,4 +383,26 @@ button.top{
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* end footer */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
 }
