@@ -21,7 +21,7 @@ function About() {
           understand more about their language and not so much about fixing them. That is when I decided to start my web developer career.
           I have not only worked with computers and electronics but since a teenager I have always been eager to learn new skills. I have also
           worked in the massage therapy industry and have developed very good customer service within the years. Throughout the years solving problems has 
-          become a skill that can be implemented in any career choice I take. 
+          become a skill that can be implemented in any career choice path I take. 
         </p>
       </div>
     </section>

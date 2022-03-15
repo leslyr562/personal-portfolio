@@ -74,7 +74,7 @@ const ContactForm = () => {
                         </div>
                     )}
                     <div className='row'>
-                    <button type="submit">Submit</button>
+                    <button className="contactB" type="submit">Submit</button>
                     </div>
                 </form>
             </div>

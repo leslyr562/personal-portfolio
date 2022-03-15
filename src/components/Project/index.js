@@ -1,4 +1,5 @@
 import React from 'react';
+import Accordion from 'react-bootstrap/Accordion'
 
 
 function Portfolio() {
@@ -60,65 +61,72 @@ function Portfolio() {
     <section id="portfolio">
       <h1 className='sectionName'>My Projects:</h1>
 
-
+<div id='projects'>
+     
+      <div className='float-left'>
       <h2> Group Projects</h2>
-      <div className='row'>
-        {groupProjects.map((images, i) => (
-          <div className='column2'>
-            <div className='content'>
-              <a className='imagelink' href={images.url} target="_blank" rel="noreferrer">
-                <img
-                  src={require(`../../assets/projects/${i}.png`)}
-                  alt={images.name}
-                  className='portfolio'
-                  key={images.name}
-                />
-              </a>
-              <h3>{images.name}</h3>
-              <h4>Description:</h4>
-              <p className='description'>{images.description}</p>
-              <h4>Technologies:</h4>
-              {images.technologies.map(technology => (
+        <Accordion defaultActiveKey="0" flush>
+          {groupProjects.map((images, i) => (
+            <Accordion.Item eventKey={(`${i}`)}>
+              <Accordion.Header>{images.name}</Accordion.Header>
+              <Accordion.Body>
+                <a className='imagelink' href={images.url} target="_blank" rel="noreferrer">
+                  <img
+                    src={require(`../../assets/projects/${i}.png`)}
+                    alt={images.name}
+                    className='portfolio'
+                    key={images.name}
+                  />
+                </a>
+                <h4>Description:</h4>
+                <p className='description'>{images.description}</p>
+                <h4>Technologies:</h4>
+                {images.technologies.map(technology => (
 
-                <li className='list'>{technology}</li>
+                  <li className='list'>{technology}</li>
 
 
-              ))}
-            </div>
-          </div>
-        ))}
+                ))}
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+
+        </Accordion>
       </div>
 
 
-<h2>Individual Projects</h2>
-      <div className='row'>
+      
+      <div className='float-right'>
+      <h2 >Individual Projects</h2>
+        <Accordion defaultActiveKey="0" flush>
+          {singleProjects.map((image, i) => (
+            <Accordion.Item eventKey={(`${i}`)}>
+              <Accordion.Header>{image.name}</Accordion.Header>
+              <Accordion.Body>
+                <a className='imagelink' href={image.url} target="_blank" rel="noreferrer">
+                  <img
+                    src={require(`../../assets/projects/${i}.jpg`)}
+                    alt={image.name}
+                    className="portfolio"
+                    key={image.name}
+                  />
+                </a>
+                <h4>Description:</h4>
+                <p className='description'>{image.description}</p>
+                <h4>Technologies:</h4>
+                {image.technologies.map(technology => (
 
-        {singleProjects.map((image, i) => (
-          <div className='column'>
-            <div className='content'>
-              <a className='imagelink' href={image.url} target="_blank" rel="noreferrer">
-                <img
-                  src={require(`../../assets/projects/${i}.jpg`)}
-                  alt={image.name}
-                  className="portfolio"
-                  key={image.name}
-                />
-              </a>
-              <h3>{image.name}</h3>
-              <h4>Description:</h4>
-              <p className='description'>{image.description}</p>
-              <h4>Technologies:</h4>
-              {image.technologies.map(technology => (
-
-                <li className='list'>{technology}</li>
+                  <li className='list'>{technology}</li>
 
 
-              ))}
-            </div>
-          </div>
-        ))}
+                ))}
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
       </div>
 
+      </div>
     </section>
   );
 }
