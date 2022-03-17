@@ -2,9 +2,8 @@
 
 ## Description
 
-This application was created trough React to display projects and for a personal-portfolio.
-The purpose of the portfolio is to show my work and my experience as a developer.
-There is a About, Contact, Portfolio and a Resume section to show different sections.
+This application was created trough React to display projects in my personal-portfolio.
+The purpose of the portfolio is to show my work skills as a junior full stack developer.
 
 
 ## Table of Contents
