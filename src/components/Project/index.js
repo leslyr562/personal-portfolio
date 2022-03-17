@@ -64,11 +64,11 @@ function Portfolio() {
 <div id='projects'>
      
       <div className='float-left'>
-      <h2> Group Projects</h2>
-        <Accordion defaultActiveKey="0" flush>
+      <h2 className='projectH2'> Group Projects</h2>
+        <Accordion className='accordion' flush>
           {groupProjects.map((images, i) => (
-            <Accordion.Item eventKey={(`${i}`)}>
-              <Accordion.Header>{images.name}</Accordion.Header>
+            <Accordion.Item className='accordion' eventKey={(`${i}`)}>
+              <Accordion.Header className='accordion'>{images.name}</Accordion.Header>
               <Accordion.Body>
                 <a className='imagelink' href={images.url} target="_blank" rel="noreferrer">
                   <img
@@ -97,11 +97,11 @@ function Portfolio() {
 
       
       <div className='float-right'>
-      <h2 >Individual Projects</h2>
-        <Accordion defaultActiveKey="0" flush>
+      <h2 className='projectH2'>Individual Projects</h2>
+        <Accordion  flush>
           {singleProjects.map((image, i) => (
-            <Accordion.Item eventKey={(`${i}`)}>
-              <Accordion.Header>{image.name}</Accordion.Header>
+            <Accordion.Item className='accordion' eventKey={(`${i}`)}>
+              <Accordion.Header className='accordion'>{image.name}</Accordion.Header>
               <Accordion.Body>
                 <a className='imagelink' href={image.url} target="_blank" rel="noreferrer">
                   <img

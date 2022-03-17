@@ -152,8 +152,12 @@ ul {
 /* portfolio */
 #portfolio{
   background-color: var(--melon);
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 200px;
+}
+
+section#portfolio{
+  padding-left: 100px;
 }
 
 h1.sectionName{
@@ -174,17 +178,59 @@ p {
   margin: auto;
 }
 
-#id{
-  width: 50%;
+#projects{
+  width: 90%;
   padding-bottom: 50px;
   padding-top: 100px;
 }
 .float-left{
+  float:left;
   align-items: flex-start;
+  width: 50%;
+
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  color:var(--magenta-haze);
+  background-color: white;
+  border-color: white;
+}
+
+.accordion-flush .accordion-item .accordion-button:hover {
+  color:var(--magenta-haze);
+  background-color: var(--tickle-me-pink);
+  border-color: white;
 }
 
 .float-right{
+  float:right;
+  width: 50%;
   align-items: flex-start;
+}
+
+button.accordion-button{
+  color: var(--magenta-haze)
+}
+
+button.accordion-button::after{
+  color: var(--magenta-haze)
+}
+
+.accordion-button:not(.collapsed)::after {
+ color:var(--magenta-haze)
+}
+
+button.accordion-button.collapsed{
+  margin-left: 80px;
+  padding-left: 80px;
+}
+
+div.accordion-body{
+  margin-bottom: 50px;
+}
+
+.projectH2{
+  padding-left: 80px;
 }
 
 img{
@@ -214,7 +260,7 @@ p.description{
 /* contact form */
 #contact {
   background-color: var(--melon);
-  padding-top: 20px;
+  padding-top: 120px;
   padding-bottom: 50px;
 }
 #contact-form{
@@ -266,9 +312,9 @@ button.contactB{
   background-color: var(--lavender);
   border-radius: 5px;
   border: none;
-  margin: 2px;
+  margin: 1px;
   float: right;
-  margin-right: 80px;
+  margin-right: 20px;
   margin-top: 10px;
 }
 
@@ -317,12 +363,6 @@ form {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 label{
   color:var(--magenta-haze);
@@ -391,22 +431,3 @@ button.top{
 
 /* end footer */
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-  .column2 {
-    width: 100%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-  .column2 {
-    width: 100%;
-  }
-}
