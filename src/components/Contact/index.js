@@ -37,7 +37,8 @@ const ContactForm = () => {
     };
 
     return (
-        <section id='contact'>
+        <section>
+            <div id='contact'>
             <h1 className='sectionName'>Contact me</h1>
             <div>
                 <img className='mailbox' src={mailbox} alt='mailbox' />
@@ -77,6 +78,7 @@ const ContactForm = () => {
                     <button className="contactB" type="submit">Submit</button>
                     </div>
                 </form>
+            </div>
             </div>
         </section>
     );

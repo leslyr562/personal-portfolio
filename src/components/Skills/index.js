@@ -18,7 +18,7 @@ function skills() {
             <h1 className='sectionName'>Skills</h1>
 
             <div>
-                <div><a href={require(`../../assets/documents/Resume.pdf`)} className="resume-link">Resume Link</a></div>
+                <div><a href={require(`../../assets/documents/Lesly's-resume.pdf`)} className="resume-link">Resume Link</a></div>
 
                 <div class="w3-container strip">
                     <ul className='strip'> 
