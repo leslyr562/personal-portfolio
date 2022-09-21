@@ -13,15 +13,7 @@ function About() {
           className="avatar-img"
         />
 
-        <p>My name is Lesly Gonzalez and I am a Junior Web developer, although it has not always been the case.
-          I was very indecisive in what carrier plan to take but I always knew I wanted to work with computers.
-          As a younger lady I worked for a electronic recycling online store.
-          I had my tech group and we worked together to fix different parts of our projects.
-          After learning how to solder and fix motherboards, I realized that I wanted to learn more about computers and be able to
-          understand more about their language and not so much about fixing them. That is when I decided to start my web developer career.
-          I have not only worked with computers and electronics but since a teenager I have always been eager to learn new skills. I have also
-          worked in the massage therapy industry and have developed very good customer service within the years. Throughout the years solving problems has 
-          become a skill that can be implemented in any career choice path I take. 
+        <p>MHello World! I'm Lesly Gonzalez, a Junior Web developer in Houston Texas.
         </p>
       </div>
     </section>
